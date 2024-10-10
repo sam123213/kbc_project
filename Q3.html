@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+    <div class="container">
+
+    <h2>3.Which of these cannot be used for a variable name in Java?</h2>
+    <div class="lable">
+    <input type="radio" id="identifier & keyword" name="answer3" value="identifier & keyword">
+    <label for="identifier & keyword">identifier & keyword</label><br><br>
+    <input type="radio" id="keyword" name="answer3" value="keyword">
+    <label for="keyword">keyword</label><br><br>
+    <input type="radio" id="identifier" name="answer3" value="identifier">
+    <label for="identifier">identifier</label><br><br>
+    
+    <input type="radio" id="none of the mentioned" name="answer3" value="none of the mentioned">
+    <label for="none of the mentioned">none of the mentioned</label><br><br>
+</div>
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <script>
+    var userName = localStorage.getItem('user-Name');
+    console.log(userName);
+    function checkAnswer() {
+      
+      var answer3 = document.querySelector('input[name="answer3"]:checked').value;
+       
+      if (answer3 === "keyword")  {
+        alert(userName+'  Congratulation !....');
+        location.href='./Q4.html'
+      } else {
+        alert(userName+"  Sorry... Wrong answer!!!");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

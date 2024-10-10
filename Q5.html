@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+  <div class="container">
+
+    <h2>5.What is the extension of compiled java classes?</h2>
+    <div class="lable">
+    <input type="radio" id=".txt" name="anwer5" value=".txt">
+    <label for=".txt">.txt</label><br><br>
+    <input type="radio" id=".js" name="answer5" value=".js">
+    <label for=".js">.js</label><br><br>
+    <input type="radio" id=".class" name="answer5" value=".class">
+    <label for=".class">.class</label><br><br>
+    <input type="radio" id=".java" name="answer5" value=".java">
+    <label for=".java">.java</label><br><br>
+</div>
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <script>
+    var userName = localStorage.getItem('user-Name');
+    console.log(userName);
+    function checkAnswer() {
+      
+      var answer5 = document.querySelector('input[name="answer5"]:checked').value;
+       
+      if (answer5 === ".class")  {
+        alert(userName+'  Congratulation !.... you have Complited the quizz');
+        location.href='./index.html'
+      } else {
+        alert(userName+"  Sorry... Wrong answer!!!");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

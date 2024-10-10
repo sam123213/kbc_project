@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+ 
+   <div class="container">
+<h1>   <label for="Name" class="input">Enter Name</label><br>
+    <input type="text" id="Name" placeholder="XYZ"><br></h1>
+   <input type="submit" class="submit" name="submit" onclick="checkAnswer()">
+   
+
+</div>
+  <script>
+  var userName = document.getElementById('Name');
+  
+  function checkAnswer() {
+        
+    if(userName.value!=null){
+      localStorage.setItem("user-Name",userName.value);
+    alert(userName.value+'  Click Ok to contineu');
+    
+    location.href='Q1.html'
+    }
+    else{
+        console.log(userName.value);
+    }
+  }
+  </script>
+</body>
+</html>
+</body>
+</html>

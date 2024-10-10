@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+    <div class="container">
+
+    <h2>4. Which of the following is not an OOPS concept in Java?</h2>
+    <div class="lable">
+    <input type="radio" id="Polymorphism" name="answer4" value="Polymorphism">
+    <label for="Polymorphism">Polymorphism</label><br><br>
+    <input type="radio" id="Inheritance" name="answer4" value="Inheritance">
+    <label for="Inheritance">Inheritance</label><br><br>
+   
+    <input type="radio" id="Encapsulation" name="answer4" value="Encapsulation">
+    <label for="Encapsulation">Encapsulation</label><br><br>
+    <input type="radio" id="Compilation" name="answer4" value="Compilation">
+    <label for="Compilation">Compilation</label><br><br>
+</div>
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <script>
+    var userName = localStorage.getItem('user-Name');
+    console.log(userName);
+    function checkAnswer() {
+      
+      var answer4 = document.querySelector('input[name="answer4"]:checked').value;
+       
+      if (answer4 === "Compilation")  {
+        alert(userName+'  Congratulation !....');
+        location.href='./Q5.html'
+      } else {
+        alert(userName+"  Sorry... Wrong answer!!!");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

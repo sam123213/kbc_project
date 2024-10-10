@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+  <div class="container">
+
+    <h2>2.What is run time Polymorphisam </h2>
+    <div class="lable">
+    <input type="radio" id="Overloading" name="answer2" value="Overloading" >
+    <label for="Overloading">Overloading</label><br><br>
+    <input type="radio" id="multiple method"   name="answer2" value="multiple method" >
+    <label for="multiple method">multiple method</label><br><br>
+    <input type="radio" id="Overriding"  name="answer2" value="Overriding">
+    <label for="Overriding">Overriding</label><br><br>
+    <input type="radio" id="Same Method name" name="answer2" value="Same Method name">
+    <label for="Same Method name">Same Method name</label><br><br>
+    </div>
+
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <script>
+    var userName = localStorage.getItem('user-Name');
+    console.log(userName);
+    function checkAnswer() {
+      
+      var answer2 = document.querySelector('input[name="answer2"]:checked').value;
+       
+      if (answer2 === "Overriding")  {
+        alert(userName+'  Congratulation !....');
+        location.href='./Q3.html'
+      } else {
+        alert(userName+"  Sorry... Wrong answer!!!");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

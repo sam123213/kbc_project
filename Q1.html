@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOPnmC_4J3ghcWPLhiAUygISWDsO-FVe-Zg&s">
+  <div class="container">
+    
+    <h2>1. Which component is used to compile, debug and execute the java programs?</h2>
+    <div class="lable">
+    <input type="radio" id="jre" name="answer1" value="jre">
+    <label for="jre">jre</label><br><br>
+    <input type="radio" id="jit" name="answer1" value="jit">
+    <label for="jit">Jit</label><br><br>
+    <input type="radio" id="jdk" name="answer1" value="jdk">
+    <label for="jdk">jdk</label><br><br>
+    <input type="radio" id="jvm" name="answer1" value="jvm">
+    <label for="jvm">jvm</label><br><br>
+  </div>
+
+    <button onclick="checkAnswer()" class="submit">Submit</button>
+  </div>
+
+  <script>
+    var userName = localStorage.getItem('user-Name');
+    console.log(userName);
+    function checkAnswer() {
+      var answer1 = document.querySelector('input[name="answer1"]:checked').value;
+     
+      if (answer1 === "jdk"){ 
+      alert(userName+'  Congratulation !....');
+         
+        location.href='./Q2.html'
+      } else {
+        alert(userName+"  Sorry... Wrong answer!!!");
+      }
+    //   if(answer1 === "jdk"){
+    //   localStorage.setItem("user-Name",userName.value);
+    // alert(userName.value+'  Click Ok to contineu');
+    
+    // location.href='Q1.html'
+    // }
+    // else{
+    //     console.log(userName.value);
+    // }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
